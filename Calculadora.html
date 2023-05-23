@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>HTML Calculator</title>
+
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body bg color="#00BFFF" text="black">
+    <h1>Projeto de Calculadora</h1>
+    <form name="calculator">
+      <h1>Numeral:</h1>
+      <div>
+        <input
+          type="button"
+          value="1"
+          onClick="document.calculator.ans.value+='1'"
+        />
+        <input
+          type="button"
+          value="2"
+          onClick="document.calculator.ans.value+='2'"
+        />
+        <input
+          type="button"
+          value="3"
+          onClick="document.calculator.ans.value+='3'"
+        />
+        <input
+          type="button"
+          value="4"
+          onClick="document.calculator.ans.value+='4'"
+        />
+        <input
+          type="button"
+          value="5"
+          onClick="document.calculator.ans.value+='5'"
+        />
+      </div>
+      <p></p>
+
+      <div>
+        <input
+          type="button"
+          value="6"
+          onClick="document.calculator.ans.value+='6'"
+        />
+        <input
+          type="button"
+          value="7"
+          onClick="document.calculator.ans.value+='7'"
+        />
+        <input
+          type="button"
+          value="8"
+          onClick="document.calculator.ans.value+='8'"
+        />
+        <input
+          type="button"
+          value="9"
+          onClick="document.calculator.ans.value+='9'"
+        />
+        <input
+          type="button"
+          value="0"
+          onClick="document.calculator.ans.value+='0'"
+        />
+      </div>
+      <p></p>
+
+      <h1>Sinais numericos:</h1>
+      <div>
+        <input
+          type="button"
+          value="+"
+          onClick="document.calculator.ans.value+='+'"
+        />
+        <input
+          type="button"
+          value="-"
+          onClick="document.calculator.ans.value+='-'"
+        />
+        <input
+          type="button"
+          value="*"
+          onClick="document.calculator.ans.value+='*'"
+        />
+        <input
+          type="button"
+          value="/"
+          onClick="document.calculator.ans.value+='/'"
+        />
+        <p></p>
+      </div>
+
+      <h1>Solucão:</h1>
+      <div>
+        <input
+          type="button"
+          value="="
+          onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"
+        />
+        <input type="textfield" name="ans" value="" />
+        <p><input type="reset" value="Reset" /></p>
+      </div>
+    </form>
+  </body>
+</html>
